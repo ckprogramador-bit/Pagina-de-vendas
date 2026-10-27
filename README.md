@@ -18,10 +18,13 @@ Site estático (HTML, CSS e JavaScript), sem dependências e sem build. Compatí
 Enquanto `CHECKOUT_URL` estiver vazio, a página é uma **demonstração**: aviso no topo e botão final desativado.
 
 ## Publicar no GitHub Pages
-1. Crie um repositório e envie estes arquivos na raiz.
-2. Em *Settings > Pages*, escolha a branch principal e a pasta raiz.
-3. A página ficará em `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/` (confira o endereço exato no painel).
-4. Depois de publicado, troque o valor de `og:image` em `index.html` pelo endereço absoluto da imagem, se quiser prévia ao compartilhar o link.
+O domínio escolhido para o projeto é `www.30diasdeconteudocomia.com.br`. A consulta ao RDAP do Registro.br não encontrou registro para esse nome em 27/10/2026; confirme a disponibilidade no momento da compra. O domínio precisa ser registrado antes de funcionar e tem custo próprio.
+
+1. No GitHub, abra *Settings > Pages* e selecione a branch `main` e a pasta `/(root)` como origem da publicação.
+2. Em *Custom domain*, informe `www.30diasdeconteudocomia.com.br` e salve.
+3. Depois de registrar o domínio, abra o painel DNS do registrador e crie um registro `CNAME`: nome/host `www`, destino `ckprogramador-bit.github.io`. Mantenha o TTL padrão.
+4. Aguarde a propagação do DNS. Quando o GitHub validar o domínio em *Settings > Pages*, habilite *Enforce HTTPS*.
+5. O endereço do site será `https://www.30diasdeconteudocomia.com.br/`. Se quiser uma prévia ao compartilhar, troque o valor de `og:image` em `index.html` pelo endereço absoluto da imagem.
 
 ## Segurança e privacidade
 Sem chaves, senhas ou formulários. O site não coleta dados de pagamento nem usa cookies ou análise de acesso.
