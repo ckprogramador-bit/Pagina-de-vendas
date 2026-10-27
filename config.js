@@ -8,7 +8,7 @@
   3) SUPPORT_EMAIL / PRODUCER_NAME: preencha quando tiver. Se vazios, não aparecem na página.
 */
 window.SITE_CONFIG = {
-  CHECKOUT_URL: "",
+  CHECKOUT_URL: "https://pay.kiwify.com.br/Gyj3BD4",
   PRICE_LABEL: "R$ 19,90",
   SUPPORT_EMAIL: "",
   PRODUCER_NAME: ""
